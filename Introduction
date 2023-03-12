@@ -1,0 +1,20 @@
+The Eternus 2000 SAN is normally used in industry grade server rooms and for situation where redundancy is needed as well as speed. Because of this you normally 
+will not see amateurs with SAN's trying to set one up. This guide will contain some of the problems and soultions I ran into setting up Fujitsu's Eternus 2000.
+Unforchanetly because I did not get this SAN New, it wasn't plug and play. I knew there was one bad drive and the array had failed. Meaning I could not just set everything
+up and go. I am also not an expert in this field, I am a college student figuring out how all of this works. In this I will document my mistakes and the way I worked around
+them. 
+
+Getting started is definitly a harder than using a raspberry pi. You'll need the following:
+A SAN (Storage Area Network)
+A Fibre/iSCI/or SAS HBA
+Cables to match
+Time
+
+This project took multiple weeks of research and troubleshooting to get working properly, don't take this guide and think you will have it up in under an hour.
+First things first, Documentation; 
+Futjitsu Models: https://www.fujitsu.com/global/support/products/computing/storage/manuals-list.html
+
+I have a Futjisu Eternus 2000 Model 200; 
+This model is older and requires alot of searching to find the required drivers and set up.
+Before getting into the SAN server its worth mentioning that a Windows Server 2012 R2 Command and Control Server was set up with remote desktop functions and automated 
+backups were configured. 
